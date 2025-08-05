@@ -1,84 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Royal Tandoor</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Royal Tandoor - Authentic Indian cuisine with a modern twist. Explore our menu, book a table, and experience royal dining.">
+  <title>The Royal Tandoor - Authentic Indian Cuisine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@7/babel.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">🍽 The Royal Tandoor</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="home" class="hero">
-    <h1>Welcome to The Royal Tandoor</h1>
-    <p>Experience the taste of authentic Indian cuisine.</p>
-    <a href="#menu" class="btn">Explore Menu</a>
-  </section>
-
-  <section id="menu" class="menu">
-    <h2>Our Menu</h2>
-    <div class="menu-grid">
-      <div class="menu-item">
-        <img src="https://source.unsplash.com/300x200/?biryani" alt="Biryani">
-        <h3>Hyderabadi Biryani</h3>
-        <p>₹250</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://source.unsplash.com/300x200/?butter-chicken" alt="Butter Chicken">
-        <h3>Butter Chicken</h3>
-        <p>₹280</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://source.unsplash.com/300x200/?paneer-tikka" alt="Paneer Tikka">
-        <h3>Paneer Tikka</h3>
-        <p>₹220</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://source.unsplash.com/300x200/?masala-dosa" alt="Masala Dosa">
-        <h3>Masala Dosa</h3>
-        <p>₹120</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="gallery" class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="https://source.unsplash.com/400x300/?indian-food" alt="Indian Food" />
-      <img src="https://source.unsplash.com/400x300/?restaurant" alt="Restaurant" />
-      <img src="https://source.unsplash.com/400x300/?food-dish" alt="Dish" />
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>We bring traditional flavors from India to your plate, using fresh ingredients and age-old recipes in a modern setting.</p>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 The Royal Tandoor. All rights reserved.</p>
-  </footer>
+  <div id="root"></div>
+  <audio id="bg-audio" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+  </audio>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
