@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TasteBite - Restaurant</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">TasteBite</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="section home-section">
+    <div class="content">
+      <h1>Welcome to TasteBite</h1>
+      <p>Delicious food, delightful experience</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="section">
+    <h2 class="section-title">Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-card animate-fade">
+        <img src="https://source.unsplash.com/400x300/?pizza" alt="Pizza"/>
+        <h3>Italian Pizza</h3>
+        <p>Freshly baked with original ingredients.</p>
+      </div>
+      <div class="menu-card animate-fade">
+        <img src="https://source.unsplash.com/400x300/?burger" alt="Burger"/>
+        <h3>Cheese Burger</h3>
+        <p>Juicy and grilled to perfection.</p>
+      </div>
+      <div class="menu-card animate-fade">
+        <img src="https://source.unsplash.com/400x300/?pasta" alt="Pasta"/>
+        <h3>Classic Pasta</h3>
+        <p>Rich flavors and authentic taste.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-content animate-slide">
+      <img src="https://source.unsplash.com/500x350/?restaurant" alt="Restaurant"/>
+      <div>
+        <p>At TasteBite, we are passionate about delivering the best dining experience. Our chefs use only fresh and organic ingredients to prepare mouth-watering dishes.</p>
+        <p>Join us for a delightful culinary journey!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://source.unsplash.com/300x200/?food,1" class="gallery-item animate-zoom">
+      <img src="https://source.unsplash.com/300x200/?food,2" class="gallery-item animate-zoom">
+      <img src="https://source.unsplash.com/300x200/?food,3" class="gallery-item animate-zoom">
+      <img src="https://source.unsplash.com/300x200/?food,4" class="gallery-item animate-zoom">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Us</h2>
+    <form class="contact-form animate-pop">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TasteBite. All rights reserved.</p>
+  </footer>
+</body>
+</html>
