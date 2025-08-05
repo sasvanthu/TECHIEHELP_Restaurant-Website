@@ -1,8 +1,8 @@
-// Smooth scroll behavior on nav click
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', e => {
+// Smooth scroll and nav highlight (if needed later)
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (e) {
     e.preventDefault();
-    const target = document.querySelector(e.target.getAttribute('href'));
+    const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       target.scrollIntoView({ behavior: 'smooth' });
     }
