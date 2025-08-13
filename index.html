@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Golden & Choco Co. offers artisan blondies and brownies, crafted with premium ingredients. Order now for indulgent Nutella Blondies, Triple Chocolate Brownies, and more.">
+    <meta name="keywords" content="artisan blondies, brownies, bakery, Golden & Choco Co., Nutella Blondie, Triple Chocolate Brownie, Salted Caramel Blondie">
+    <meta name="author" content="Golden & Choco Co.">
+    <meta property="og:title" content="Golden & Choco Co. - Artisan Blondies & Brownies">
+    <meta property="og:description" content="Indulge in our handcrafted blondies and brownies, made with premium ingredients. Order online now!">
+    <meta property="og:image" content="data:image/jpeg;base64,/9j/4AAQSkZJRg...[base64-hero-image]">
+    <meta property="og:url" content="https://sasvanthu.github.io/golden-choco-co/">
+    <meta property="og:type" content="website">
+    <title>Golden & Choco Co. - Artisan Blondies & Brownies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Caveat:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            color: #3C2F2F;
+            background-color: #FFF8E7;
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #4A3728;
+            font-size: 4rem; /* Enlarged brand name */
+        }
+
+        h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #4A3728;
+        }
+
+        p, button {
+            font-family: 'Caveat', cursive;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            background-color: #D4A017;
+            color: #FFF8E7;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #B88E14;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-content {
+            background: rgba(60, 47, 47, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            color: #FFF8E7;
+        }
+
+        .products, .contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: #FFF8E7;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .rating {
+            color: #D4A017;
+            margin: 10px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #4A3728;
+            border-radius: 5px;
+            font-family: 'Caveat', cursive;
+        }
+
+        footer {
+            background: #4A3728;
+            color: #FFF8E7;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 10px;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2.5rem; /* Adjusted for mobile */
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Golden & Choco Co.",
+        "url": "https://sasvanthu.github.io/golden-choco-co/",
+        "logo": "data:image/jpeg;base64,/9j/4AAQSkZJRg...[base64-logo-image]",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-123-456-7890",
+            "contactType": "customer service",
+            "email": "contact@goldenandchoco.com"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Sweet Lane",
+            "addressLocality": "Mumbai",
+            "addressCountry": "IN"
+        },
+        "openingHours": "Mo-Sa 09:00-18:00"
+    }
+    </script>
+</head>
+<body>
+    <!-- Hero Banner -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Golden & Choco Co.</h1>
+            <a href="#products" class="btn order-now">Order Now</a>
+        </div>
+        <video autoplay muted loop class="hero-video">
+            <source src="data:video/mp4;base64,/9j/4AAQSkZJRg...[base64-hero-video]" type="video/mp4">
+        </video>
+    </header>
+
+    <!-- Signature Products -->
+    <section id="products" class="products">
+        <h2>Our Signature Treats</h2>
+        <div class="product-grid">
+            <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                <img src="https://raw.githubusercontent.com/sasvanthu/TECHIEHELP_Restaurant-Website/main/Assets/Nutella%20Blondie.png" alt="Nutella Blondie" itemprop="image">
+                <h3 itemprop="name">Nutella Blondie</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="priceCurrency" content="INR">₹</span><span itemprop="price">199</span>
+                </p>
+                <div class="rating">★★★★★</div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                <img src="https://raw.githubusercontent.com/sasvanthu/TECHIEHELP_Restaurant-Website/main/Assets/Triple%20Chocolate%20Brownie.png" alt="Triple Chocolate Brownie" itemprop="image">
+                <h3 itemprop="name">Triple Chocolate Brownie</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="priceCurrency" content="INR">₹</span><span itemprop="price">249</span>
+                </p>
+                <div class="rating">★★★★★</div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                <img src="https://raw.githubusercontent.com/sasvanthu/TECHIEHELP_Restaurant-Website/main/Assets/Salted%20Caramel%20Blondies.jpeg" alt="Salted Caramel Blondie" itemprop="image">
+                <h3 itemprop="name">Salted Caramel Blondie</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="priceCurrency" content="INR">₹</span><span itemprop="price">229</span>
+                </p>
+                <div class="rating">★★★★★</div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                <img src="https://raw.githubusercontent.com/sasvanthu/TECHIEHELP_Restaurant-Website/main/Assets/Peanut%20Butter%20Brownie.jpeg" alt="Peanut Butter Brownie" itemprop="image">
+                <h3 itemprop="name">Peanut Butter Brownie</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="priceCurrency" content="INR">₹</span><span itemprop="price">249</span>
+                </p>
+                <div class="rating">★★★★★</div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                <img src="https://raw.githubusercontent.com/sasvanthu/TECHIEHELP_Restaurant-Website/main/Assets/Lotus%20Biscoff%20Blondie.jpeg" alt="Lotus Biscoff Blondie" itemprop="image">
+                <h3 itemprop="name">Lotus Biscoff Blondie</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="priceCurrency" content="INR">₹</span><span itemprop="price">249</span>
+                </p>
+                <div class="rating">★★★★★</div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" itemscope itemtype="https://schema.org/Product">
+                <img src="https://raw.githubusercontent.com/sasvanthu/TECHIEHELP_Restaurant-Website/main/Assets/Hazelnut%20Praline%20Brownie.jpeg" alt="Hazelnut Praline Brownie" itemprop="image">
+                <h3 itemprop="name">Hazelnut Praline Brownie</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="priceCurrency" content="INR">₹</span><span itemprop="price">279</span>
+                </p>
+                <div class="rating">★★★★★</div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Store Locator -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.267676135!2d72.829532!3d19.107456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c676018b9b%3A0x945bff3b8e8f3e3!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1698765432100!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Store location map"></iframe>
+            </div>
+            <div class="contact-info">
+                <h3>Visit Us</h3>
+                <p>123 Sweet Lane, Mumbai, India</p>
+                <p>Mon-Sat: 9 AM - 6 PM</p>
+                <h3>Contact</h3>
+                <p>Email: contact@goldenandchoco.com</p>
+                <p>Phone: +91-123-456-7890</p>
+                <div class="contact-form">
+                    <input type="text" placeholder="Name" aria-label="Name">
+                    <input type="email" placeholder="Email" aria-label="Email">
+                    <textarea placeholder="Message" aria-label="Message"></textarea>
+                    <button class="btn submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Golden & Choco Co. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Add to cart button interaction
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', () => {
+                    alert('Item added to cart!');
+                });
+            });
+
+            // Contact form submission
+            document.querySelector('.contact-form .submit').forEach(button => {
+                button.addEventListener('click', () => {
+                    alert('Message sent!');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
